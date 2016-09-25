@@ -25,7 +25,6 @@
     <script type="text/javascript" src="js/main.js"></script>
 	
 </head>
-	
 <body>
 	
 <script language=JavaScript>
@@ -48,86 +47,43 @@ document.oncontextmenu=new Function("return false")
 // --> 
 </script>		
 
-<!-- Script para evitar la scrollbar -->
-
-<script>$("body").css("overflow", "hidden");</script>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-3672732-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-  
-</script>
-
-
 	<header>
 		<div class="logo">
-			<a href="index.html"><img src="img/logo2.png" title="MSS" alt="MSS"/></a>
+			<a href="index.html"><img src="img/logo2.png" title="Magnetic" alt="Magnetic"/></a>
 		</div><!-- end logo -->
 
 		<div id="menu_icon"></div>
 		<nav>
-				<ul>
-					<li><a href="index.html" class="selected">Home</a></li> <!-- IMPORTANTE CAMBIAR EN CADA UNA DE LAS PÁGINAS -->
-					<li><a href="about.html">Sobre mí</a></li>
-					<li><a href="Arquitectura.html">Arquitectura</a></li>
-					<li><a href="Fotografía.html">Fotografía</a></li>
-					<li><a href="Diseño.html">Diseño</a></li>
-					<li><a href="mailto:mario.san.sam@hotmail.com">Contactar</a></li>
-				</ul>
-			
-				</nav><!-- end navigation menu -->
+			<ul>
+				<li><a href="index.html" >Home</a></li> <!-- IMPORTANTE CAMBIAR EN CADA UNA DE LAS PÁGINAS -->
+				<li><a href="about.html">Sobre mí</a></li>
+				<li><a href="#">Arquitectura</a></li>
+				<li><a href="fotografía.html" class="selected">Fotografía</a></li>
+				<li><a href="#">Diseño</a></li>
+				<li><a href="mailto:mario.san.sam@hotmail.com">Contactar</a></li>
+			</ul>
+		</nav><!-- end navigation menu -->
 
-	<div class="footer clearfix">
+		<div class="footer clearfix">
 			<ul class="social clearfix">
-				<li><a href="http://facebook.com/mario.sanchezsamos" target="_blank" class="fb" data-title="facebook"></a></li>
-				<li><a href="http://instagram.com/mariosansam" target="_blank" class="google" data-title="Instagram"></a></li>
-				<li><a href="https://www.behance.net/MarioSanSam" target="_blank" class="behance" data-title="Behance"></a></li>
-				<li><a href="https://www.behance.net/MarioSanSam" target="_blank" class="vimeo" data-title="Vimeo"></a></li>
+				<li><a href="http://facebook.com/mario.sanchezsamos" class="fb" data-title="Facebook"></a></li>
+				<li><a href="http://instagram.com/mariosansam" class="google" data-title="Instagram"></a></li>
 			</ul><!-- end social -->
 
 			<div class="rights">
 				<p>Copyright © 2016 Mario Sánchez Samos</p>
-				<p>Template by Pixelhint.com</p>
+				<p>Template by <a href="">Pixelhint.com</a></p>
 			</div><!-- end rights -->
 		</div ><!-- end footer -->
-	
-					<script language=JavaScript>
-
-							var $works = $("#parent > .work");
-							var $btns = $("#header > .btn").on("click", function() {
-				  
-							var active = 
-							$btns.removeClass("active")
-							.filter(this)
-							.addClass("active")
-							.data("filter");
-				  
-							$works
-							.hide()
-							.filter( "." + active )
-							.fadeIn(450);
-							
-							});
-							
-					</script>	
-				
 	</header><!-- end header -->
 
-	<section class="main clearfix">
+		<section class="main clearfix">
 	
 	<div id="parent">
 	
-		<div class="work b">
+	<div class="work b">
 				<a href="mexico.html">
-					<img src="img/Home/work1.jpg" class="grayscale" alt=""/>
+					<img src="img/Arquitectura/work1.jpg" class="grayscale" alt=""/>
 					<div class="caption">
 						<div class="work_title">
 								<p>México '16</p>
@@ -138,7 +94,7 @@ document.oncontextmenu=new Function("return false")
 
 		<div class="work a">
 			<a href="Broglio.html">
-				<img src="img/Home/work2.jpg" class="grayscale" alt=""/>
+				<img src="img/Arquitectura/work2.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
 						<p>Il Nuovo Broglio</p>
@@ -149,7 +105,7 @@ document.oncontextmenu=new Function("return false")
 
 		<div class="work b">
 			<a href="England.html">
-				<img src="img/Home/work4.jpg" class="grayscale" alt=""/>
+				<img src="img/Arquitectura/work4.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
 						<p>England '16</p>
@@ -160,7 +116,7 @@ document.oncontextmenu=new Function("return false")
 		
 		<div class="work b">
 			<a href="italy.html">
-				<img src="img/Home/work3.jpg" class="grayscale" alt=""/>
+				<img src="img/Arquitectura/work3.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
 						<p>Italy '16</p>
@@ -172,7 +128,7 @@ document.oncontextmenu=new Function("return false")
 		
 		<div class="work b">
 			<a href="Alhambra.html">
-				<img class="grayscale" src="img/Home/work5.jpg"  alt=""/>
+				<img class="grayscale" src="img/Arquitectura/work5.jpg"  alt=""/>
 				<div class="caption">
 					<div class="work_title">
 						<p>The Alhambra '15</p>
@@ -183,7 +139,7 @@ document.oncontextmenu=new Function("return false")
 		
 		<div class="work b">
 			<a href="Realejo.html">
-				<img class="grayscale" src="img/Home/work13.jpg"  alt=""/>
+				<img class="grayscale" src="img/Arquitectura/work13.jpg"  alt=""/>
 				<div class="caption">
 					<div class="work_title">
 						<p>House in El Realejo</p>
@@ -194,7 +150,7 @@ document.oncontextmenu=new Function("return false")
 
 		<div class="work a">
 			<a href="Terrains.html">
-				<img src="img/Home/work6.jpg" class="grayscale" alt=""/>
+				<img src="img/Arquitectura/work6.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
 						<p>Terrains</p>
@@ -205,7 +161,7 @@ document.oncontextmenu=new Function("return false")
 
 		<div class="work a">
 			<a href="lux.html">
-				<img src="img/Home/work7.jpg" class="grayscale" alt=""/>
+				<img src="img/Arquitectura/work7.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
 						<p>Lux</p>
@@ -216,7 +172,7 @@ document.oncontextmenu=new Function("return false")
 
 		<div class="work b">
 			<a href="USA.html">
-				<img class="grayscale" src="img/Home/work8.jpg" alt=""/>
+				<img class="grayscale" src="img/Arquitectura/work8.jpg" alt=""/>
 				<div class="caption">
 					<div class="work_title">
 						<p>USA '15</p>
@@ -227,7 +183,7 @@ document.oncontextmenu=new Function("return false")
 
 		<div class="work a">
 			<a href="DEA.html">
-				<img src="img/Home/work9.jpg" class="grayscale" alt=""/>
+				<img src="img/Arquitectura/work9.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
 						<p>DEA - Branding</p>
@@ -238,7 +194,7 @@ document.oncontextmenu=new Function("return false")
 		
 		<div class="work b">
 			<a href="Portugal.html">
-				<img src="img/Home/work10.jpg" class="grayscale" alt=""/>
+				<img src="img/Arquitectura/work10.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
 						<p>Portugal '15</p>
@@ -249,7 +205,7 @@ document.oncontextmenu=new Function("return false")
 		
 		<div class="work b">
 			<a href="Dibujo.html">
-				<img src="img/Home/work11.jpg" class="grayscale" alt=""/>
+				<img src="img/Arquitectura/work11.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
 						<p>Dibujo y Arquitectura</p>
@@ -260,7 +216,7 @@ document.oncontextmenu=new Function("return false")
 		
 		<div class="work b">
 			<a href="Habitats.html">
-				<img src="img/Home/work12.jpg" class="grayscale" alt=""/>
+				<img src="img/Arquitectura/work12.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
 						<p>Habitats</p>
@@ -269,12 +225,10 @@ document.oncontextmenu=new Function("return false")
 			</a>
 		</div>
 	</div>
-
+	
 	</div>
 	
 	</section><!-- end main -->
-	
-
 	
 </body>
 </html>
