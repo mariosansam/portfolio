@@ -1,4 +1,4 @@
-/*
+//*
 
     Template Author : pixelhint.com
     Author Email    : contact@pixelhint.com
@@ -113,8 +113,6 @@ h5, h6          { font-weight: bolder }
 
 
 
-
-
 /*  Header  */
 @media (min-width:1099px){
     header{
@@ -138,7 +136,7 @@ h5, h6          { font-weight: bolder }
     header nav ul{
         display: block;
         overflow: hidden;
-        margin-top: 100px;
+        margin-top: 50px;
         list-style: none;
     }
 
@@ -159,10 +157,26 @@ h5, h6          { font-weight: bolder }
     header nav ul li a.selected{
         color: #969595;
     }
-
+	
+	header .btn{
+		border: none;
+		background: none;
+		outline:none;
+		color: #454545;
+        font-family: "raleway-regular", arial;
+        font-size: 14px;
+        text-decoration: none;
+        letter-spacing: 1px;		
+	}
+	
+	header .active{ /* NUEVO*/
+		color: #969595;
+	}
+	
+	
     header .footer{
         position: absolute;
-        bottom: 50px;
+        bottom: 20px;
     }
 
     header ul.social{
@@ -198,7 +212,6 @@ h5, h6          { font-weight: bolder }
         background-position: 0 0;
     }
 
-
     header ul.social li a.google,
     header ul.social li a.google:hover{
         background-position: -31px 0;
@@ -209,8 +222,8 @@ h5, h6          { font-weight: bolder }
         background-position: -62px 0;
     }
 
-    header ul.social li a.twitter,
-    header ul.social li a.twitter:hover{
+    header ul.social li a.vimeo,
+    header ul.social li a.vimeo:hover{
         background-position: -93px 0;
     }
 
@@ -225,7 +238,7 @@ h5, h6          { font-weight: bolder }
     }
 
     header .rights p{
-        color: #454545;
+        color: #eaeaea;
         font-family: "raleway-regular", arial;
         font-size: 11px;
         letter-spacing: 1px;
@@ -304,9 +317,10 @@ h5, h6          { font-weight: bolder }
 }
 	
 /*  Home/portfolio  */
+
 .main .work{
     display: block;
-    width: 33.33333333333333%;
+    width: 20%;
     height: auto;
     float: left;
     position: relative;
@@ -330,10 +344,27 @@ h5, h6          { font-weight: bolder }
 	vertical-align: middle;
 	
 }
+
 .main .work a:hover .grayscale  {
     filter: none;
     -webkit-filter: grayscale(0%);
 }
+
+.main .work .apagar {
+    width: 100%
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+, IE10 */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+	vertical-align: middle;
+	
+}
+
+.main .work a:hover .apagar  {
+    opacity: 0;
+}
+
 svg image {
     transition: all .6s ease;
 }
@@ -365,27 +396,80 @@ svg image:hover {
     position: absolute;
     text-align: center;
     top: 50%;
-    margin-top: -40px;
+    margin-top: -30px;
 }
 
-.main .work .caption h1{
+.main .work .caption p{
     position: relative;
     display: inline-block;
-    max-width: 90%;
-    padding: 20px 0;
+    max-width: 100%;
+    padding: 10px 10px;
     z-index: 77;
     color: #ffffff;
     font-family: "raleway-regular", arial;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: .5px;
-    border-bottom: 1px solid #bfbbbb;
-    border-top: 1px solid #bfbbbb;
+	border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	background: rgba(255, 255, 255, 0);
+	margin: 0;
+}
+
+.main .work .cat-arq{
+		
 }
 
 
 
+/* About */
 
+.about{
+	width: 60%;
+    height: 100%;
+    padding-left: 300px;
+	padding-right: 20px;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    background: #ffffff;
+    clear: both;
+	color: #a6a6a6;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+	TEXT-ALIGN:justify;
+}
 
+.aboutimagen{
+	width: 30%;
+    height: 40%;
+    padding-left: 20px;
+	padding-right: 20px;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+	right:60px;
+    background: #ffffff;
+    clear: both;
+	color: #a6a6a6;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+	align: right
+}
+
+.yutu{
+ padding-left: 300px;
+ padding-right:20px;
+  width: 100%    !important;
+  height: auto   !important;
+}
 
 
 /*  Inner Page  */
@@ -408,8 +492,15 @@ svg image:hover {
     width: 100%;
 }
 
-.work_nav .btn{
-    float: right;
+.btn{
+    display: block;
+	width:100%;	
+	float: right;
+}
+
+.active {
+  background: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
 
 .work_nav ul{
@@ -500,8 +591,8 @@ svg image:hover {
 .content h5,
 .content h6{
     color: #4b4848;
-    font-family: "raleway-semibold", arial;
-    font-weight: bold;
+    font-family: "raleway-regular", arial;
+    font-weight: regular;
     line-height: 28px;
     margin-bottom: 30px;
 
