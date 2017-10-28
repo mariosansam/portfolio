@@ -1,4 +1,4 @@
-//*
+/*
 
     Template Author : pixelhint.com
     Author Email    : contact@pixelhint.com
@@ -82,20 +82,8 @@ header nav ul li a{
     -o-transition:all .1s linear;
 }
 
-h1, h2, h3, h5 ,h6{
+h1, h2, h3, h4, h5 ,h6{
     color: #4b4848;
-    font-family: "raleway-regular", arial;
-    letter-spacing: 1px;
-}
-
-h4{
-	color: #939393;
-    font-family: "raleway-regular", arial;
-    letter-spacing: 1px;
-}
-
-h7{
-	color: #e2e2e2;
     font-family: "raleway-regular", arial;
     letter-spacing: 1px;
 }
@@ -103,12 +91,10 @@ h7{
 h1              { font-size: 2em; margin: .67em 0 }
 h2              { font-size: 1.5em; margin: .75em 0 }
 h3              { font-size: 1.17em; margin: .83em 0 }
-h4				{ font-size: 11px; margin: 1.67em 0 }
 h5              { font-size: .83em; margin: 1.5em 0 }
 h6              { font-size: .75em; margin: 1.67em 0 }
-h7              { font-size: .55em; margin: 1.67em 0 }
 h1, h2, h3, h4,
-h5, h6, h7, h8,          { font-weight: normal }
+h5, h6          { font-weight: bolder }
 
 .clearfix:before,  
 .clearfix:after {  
@@ -122,6 +108,8 @@ h5, h6, h7, h8,          { font-weight: normal }
 .clearfix {  
     *zoom: 1;  
 }
+
+
 
 
 
@@ -144,25 +132,25 @@ h5, h6, h7, h8,          { font-weight: normal }
     }
 
     header .logo{
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     header nav ul{
         display: block;
         overflow: hidden;
-        margin-top: 50px;
+        margin-top: 100px;
         list-style: none;
     }
 
     header nav ul li{
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     header nav ul li a{
         color: #454545;
         font-family: "raleway-regular", arial;
-        font-size: 13px;
+        font-size: 14px;
         text-decoration: none;
         letter-spacing: 1px;
     }
@@ -174,7 +162,7 @@ h5, h6, h7, h8,          { font-weight: normal }
 
     header .footer{
         position: absolute;
-        bottom: 20px;
+        bottom: 50px;
     }
 
     header ul.social{
@@ -273,6 +261,63 @@ h5, h6, h7, h8,          { font-weight: normal }
     background-position: -41px 0!important;
 }
 
+/* About */
+
+.about{
+	width: 60%;
+    height: 100%;
+    padding-left: 300px;
+	padding-right: 20px;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    background: #ffffff;
+    clear: both;
+	color: #454545;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+	TEXT-ALIGN:justify;
+}
+
+.aboutimagen{
+	width: 40%;
+    height: 100%;
+    padding-left: 300px;
+	padding-right: 20px;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+	right:20px;
+    background: #ffffff;
+    clear: both;
+	color: #454545;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+	align: right
+
+.about .texto{
+	display: block;
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+	vertical-align: middle;
+	align: left;
+}	
+	
+.about .galeria{
+	display: block;
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+	vertical-align: right;
+	
+}
 /* Diapositivas */
 
 .diapositivas{
@@ -298,11 +343,7 @@ h5, h6, h7, h8,          { font-weight: normal }
 .diapositivas .galería .media{
     width: 100%;
     vertical-align: middle;
-	text-align: middle;
 }
-
-
-
 
 /*  Main  */
 
@@ -322,7 +363,7 @@ h5, h6, h7, h8,          { font-weight: normal }
 /*  Home/portfolio  */
 .main .work{
     display: block;
-    width: 16.6666666666666%;
+    width: 33.33333333333333%;
     height: auto;
     float: left;
     position: relative;
@@ -381,92 +422,27 @@ svg image:hover {
     position: absolute;
     text-align: center;
     top: 50%;
-    margin-top: -20px;
+    margin-top: -40px;
 }
 
-.main .work .caption p{
+.main .work .caption h1{
     position: relative;
     display: inline-block;
-    max-width: 100%;
-    padding: 10px 10px;
+    max-width: 90%;
+    padding: 20px 0;
     z-index: 77;
     color: #ffffff;
     font-family: "raleway-regular", arial;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: .5px;
-	border-bottom: 1px solid #ffffff;
-    border-top: 1px solid #ffffff;
-	border-left: 1px solid #ffffff;
-	border-right: 1px solid #ffffff;
-	background: rgba(255, 255, 255, 0);
-	margin: 0;
+    border-bottom: 1px solid #bfbbbb;
+    border-top: 1px solid #bfbbbb;
 }
 
-.main .work .caption p2{
-    position: relative;
-    display: inline-block;
-    max-width: 100%;
-    padding: 10px 10px;
-    z-index: 77;
-    color: #000000;
-    font-family: "raleway-regular", arial;
-    font-size: 14px;
-    letter-spacing: .5px;
-	border-bottom: 1px solid #000000;
-    border-top: 1px solid #000000;
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	background: rgba(255, 255, 255, 0);
-	margin: 0;
-}
 
-/* About */
 
-.about{
-	width: 60%;
-    height: 100%;
-    padding-left: 300px;
-	padding-right: 20px;
-	-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    position: absolute;
-    background: #ffffff;
-    clear: both;
-	color: #a6a6a6;
-    font-family: "raleway-regular", arial;
-    font-size: 14px;
-    text-decoration: none;
-    letter-spacing: 1px;
-	TEXT-ALIGN:justify;
-}
 
-.aboutimagen{
-	width: 30%;
-    height: 40%;
-    padding-left: 20px;
-	padding-right: 20px;
-	-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    position: absolute;
-	right:60px;
-    background: #ffffff;
-    clear: both;
-	color: #a6a6a6;
-    font-family: "raleway-regular", arial;
-    font-size: 14px;
-    text-decoration: none;
-    letter-spacing: 1px;
-	align: right
-}
 
-.yutu{
- padding-left: 300px;
- padding-right:20px;
-  width: 100%    !important;
-  height: auto   !important;
-}
 
 
 /*  Inner Page  */
@@ -577,25 +553,19 @@ svg image:hover {
 .content h1,
 .content h2,
 .content h3,
+.content h4,
 .content h5,
-.content h6,
-.content h7,
-.content h8{
+.content h6{
     color: #4b4848;
-    font-family: "raleway-regular", arial;
-    font-weight: regular;
+    font-family: "raleway-semibold", arial;
+    font-weight: bold;
     line-height: 28px;
     margin-bottom: 30px;
 
 }
 
-.content h4{
-	color: #F0F8FF;
-    font-family: "raleway-regular", arial;
-    font-weight: regular;
-    line-height: 28px;
-    margin-bottom: 30px;
-}
+
+
 
 
 
@@ -710,7 +680,7 @@ svg image:hover {
         text-align: center;
         color: #454545;
         font-family: "raleway-regular", arial;
-        font-size: 14 px;
+        font-size: 14px;
         text-decoration: none;
         border-top: 1px solid #f7f5f5;
         background: #fff;
