@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>MSS - Architecture // Photography</title>
+	<title>MSS</title>
 	<meta charset="utf-8">
 	<meta name="author" content="pixelhint.com">
 	<meta name="description" content="Magnetic is a stunning responsive HTML5/CSS3 photography/portfolio website template"/>
@@ -18,11 +18,13 @@
 	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-    
+    <link  href="css/fotorama.css" rel="stylesheet" type="text/css">
+	
 <!-------- Javascript -------->
 	
 	<script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 	
 </head>
 	
@@ -50,7 +52,7 @@ document.oncontextmenu=new Function("return false")
 
 <!-- Script para evitar la scrollbar -->
 
-<script>$("body").css("overflow", "hidden");</script>
+
 
 <script type="text/javascript">
 
@@ -66,6 +68,10 @@ document.oncontextmenu=new Function("return false")
   
 </script>
 
+<!-- Script para el Fade Out-->
+
+
+
 
 	<header>
 		<div class="logo">
@@ -73,29 +79,37 @@ document.oncontextmenu=new Function("return false")
 		</div><!-- end logo -->
 
 		<div id="menu_icon"></div>
+		
 		<nav>
 				<ul>
-					<li><a href="index.html" class="selected">Home</a></li> <!-- IMPORTANTE CAMBIAR EN CADA UNA DE LAS PÁGINAS -->
-					<li><a href="about.html">Sobre mí</a></li>
-					<li><a href="Arquitectura.html">Arquitectura</a></li>
-					<li><a href="Fotografía.html">Fotografía</a></li>
-					<li><a href="Diseño.html">Diseño</a></li>
-					<li><a href="mailto:mario.san.sam@hotmail.com">Contactar</a></li>
+					<li><a style="cursor:pointer" id="index" class="selected">Home</a></li> <!-- IMPORTANTE CAMBIAR EN CADA UNA DE LAS PÁGINAS -->
+					<li><a style="cursor:pointer" id="arquitectura">#Arquitectura</a></li>
+					<li><a style="cursor:pointer" id="foto">#Fotografía</a></li>
+					<li><a style="cursor:pointer" id="video">#Video</a></li>
+					<li><a style="cursor:pointer" id="diseño">#Diseño</a></li>
+					<li>&#8291</li>
+					<li><a style="cursor:pointer" id="2017">2017</a></li>
+					<li><a style="cursor:pointer" id="2016">2016</a></li>
+					<li><a style="cursor:pointer" id="2015">2015</a></li>
+					<li><a style="cursor:pointer" id="2014">2014</a></li>
+					<li>&#8291</li>
+					<li><a href="aboutes.html">Sobre mí</a></li>
+					<li><a href="contact_es.html">Contactar</a></li>
+					<li><a href="index.html" class="selected">Es</a>  <a href="indexingles.html">En</a></li>
 				</ul>
 			
-				</nav><!-- end navigation menu -->
+		</nav><!-- end navigation menu -->
 
 	<div class="footer clearfix">
 			<ul class="social clearfix">
-				<li><a href="http://facebook.com/mario.sanchezsamos" target="_blank" class="fb" data-title="facebook"></a></li>
+				<li><a href="http://facebook.com/mario.sanchezsamos" target="_blank" class="fb" data-title="Facebook"></a></li>
 				<li><a href="http://instagram.com/mariosansam" target="_blank" class="google" data-title="Instagram"></a></li>
 				<li><a href="https://www.behance.net/MarioSanSam" target="_blank" class="behance" data-title="Behance"></a></li>
-				<li><a href="https://www.behance.net/MarioSanSam" target="_blank" class="vimeo" data-title="Vimeo"></a></li>
+				<li><a href="https://vimeo.com/user37026425" target="_blank" class="twitter" data-title="Vimeo"></a></li>
 			</ul><!-- end social -->
 
 			<div class="rights">
-				<p>Copyright © 2016 Mario Sánchez Samos</p>
-				<p>Template by Pixelhint.com</p>
+				<p>Copyright © 2017 Mario Sánchez Samos</p>
 			</div><!-- end rights -->
 		</div ><!-- end footer -->
 	
@@ -125,19 +139,102 @@ document.oncontextmenu=new Function("return false")
 	
 	<div id="parent">
 	
-		<div class="work b">
-				<a href="mexico.html">
-					<img src="img/Home/work1.jpg" class="grayscale" alt=""/>
+		
+		<div class="work c" id="work21">
+				<a href="21_China_es.html">
+					<img src="img/Home/work21.jpg" class="grayscale" alt=""/>
 					<div class="caption">
 						<div class="work_title">
-								<p>México '16</p>
+							<p>China</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		<div class="work c" id="work20">
+				<a href="20_Bobardi_es.html">
+					<img src="img/Home/work20.jpg" class="grayscale" alt=""/>
+					<div class="caption">
+						<div class="work_title">
+							<p>Bo Bardi + Markli</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		<div class="work b" id="work24">
+				<a href="24_Brut_es.html">
+					<img src="img/Home/work24.jpg" class="grayscale" alt=""/>
+					<div class="caption">
+						<div class="work_title">
+							<p2>Brutalismo Modular</p2>
+						</div>
+					</div>
+				</a>
+		</div>	
+		
+		
+		<div class="work c" id="work23">
+				<a href="23_Alemania_es.html">
+					<img src="img/Home/work23.jpg" class="grayscale" alt=""/>
+					<div class="caption">
+						<div class="work_title">
+							<p>Alemania</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+				
+		<div class="work b" id="work18">
+				<a href="18_Polaroid_es.html">
+					<img src="img/Home/work18.jpg" class="grayscale" alt=""/>
+					<div class="caption">
+						<div class="work_title">
+							<p2>Polaroid Siesta Hostel</p2>
+						</div>
+					</div>
+				</a>
+		</div>	
+		
+		<div class="work b" id="work17">
+				<a href="17_WhereLimerickMeetsVenice_es.html">
+					<img src="img/Home/work17.jpg" class="grayscale" alt=""/>
+					<div class="caption">
+						<div class="work_title">
+							<p>Where Limerick meets Venice</p>
+						</div>
+					</div>
+				</a>
+		</div>	
+		
+		<div class="work b" id="work15">
+				<a href="15_Ireland_es.html">
+					<img src="img/Home/work15.jpg" class="grayscale" alt=""/>
+					<div class="caption">
+						<div class="work_title">
+							<p>Irlanda</p>
 						</div>
 					</div>
 				</a>
 		</div>
+				
+		<div class="work b" id="work1">
+				<a href="1_mexico_es.html">
+					<img src="img/Home/work1.jpg" class="grayscale" alt=""/>
+					<div class="caption">
+						<div class="work_title">
+							<p>México</p>
+						</div>
+					</div>
+				</a>
+		</div>
+		
 
-		<div class="work a">
-			<a href="Broglio.html">
+		<div class="work a" id="work2">
+			<a href="2_Broglio_es.html">
 				<img src="img/Home/work2.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
@@ -147,108 +244,130 @@ document.oncontextmenu=new Function("return false")
 			</a>
 		</div>
 
-		<div class="work b">
-			<a href="England.html">
+		<div class="work b" id="work3">
+			<a href="3_England_es.html">
 				<img src="img/Home/work4.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<p>England '16</p>
+						<p>Inglaterra</p>
 					</div>
 				</div>
 			</a>
 		</div>
 		
-		<div class="work b">
-			<a href="italy.html">
+		<div class="work b" id="work4">
+			<a href="4_italy_es.html">
 				<img src="img/Home/work3.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<p>Italy '16</p>
+						<p>Italia</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+		<div class="work b" id="work14">
+			<a href="14_Exeter_es.html">
+				<img src="img/Home/work14.jpg" class="grayscale" alt=""/>
+				<div class="caption">
+					<div class="work_title">
+						<p>Louis Kahn - Exeter Academy Model</p>
 					</div>
 				</div>
 			</a>
 		</div>
 
 		
-		<div class="work b">
-			<a href="Alhambra.html">
+		<div class="work b" id="work5">
+			<a href="5_Alhambra_es.html">
 				<img class="grayscale" src="img/Home/work5.jpg"  alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<p>The Alhambra '15</p>
+						<p>La Alhambra</p>
 					</div>
 				</div>
 			</a>
 		</div>
 		
-		<div class="work b">
-			<a href="Realejo.html">
+		<div class="work a" id="work6">
+			<a href="6_Realejo_es.html">
 				<img class="grayscale" src="img/Home/work13.jpg"  alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<p>House in El Realejo</p>
+						<p>Casa en El Realejo</p>
 					</div>
 				</div>
 			</a>
 		</div>
 
-		<div class="work a">
-			<a href="Terrains.html">
+		<div class="work c" id="work7">
+			<a href="7_Terrains_es.html">
 				<img src="img/Home/work6.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<p>Terrains</p>
+						<p2>Terrenos</p2>
 					</div>
 				</div>
 			</a>
 		</div>
 
-		<div class="work a">
-			<a href="lux.html">
+		<div class="work a" id="work8">
+			<a href="8_lux_es.html">
 				<img src="img/Home/work7.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<p>Lux</p>
+						<p>LUX</p>
 					</div>
 				</div>
 			</a>
 		</div>
 
-		<div class="work b">
-			<a href="USA.html">
+		<div class="work b" id="work9">
+			<a href="9_USA_es.html">
 				<img class="grayscale" src="img/Home/work8.jpg" alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<p>USA '15</p>
+						<p>USA</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+		<div class="work b" id="work16">
+			<a href="16_Stand_es.html">
+				<img class="grayscale" src="img/Home/work16.jpg" alt=""/>
+				<div class="caption">
+					<div class="work_title">
+						<p>Stand de libros</p>
 					</div>
 				</div>
 			</a>
 		</div>
 
-		<div class="work a">
-			<a href="DEA.html">
+		<div class="work c" id="work10">
+			<a href="10_DEA_es.html">
 				<img src="img/Home/work9.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<p>DEA - Branding</p>
+						<p2>DEA - Branding</p2>
 					</div>
 				</div>
 			</a>
 		</div>
 		
-		<div class="work b">
-			<a href="Portugal.html">
+		<div class="work b" id="work11">
+			<a href="11_Portugal_es.html">
 				<img src="img/Home/work10.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<p>Portugal '15</p>
+						<p>Portugal</p>
 					</div>
 				</div>
 			</a>
 		</div>
 		
-		<div class="work b">
-			<a href="Dibujo.html">
+		<div class="work a" id="work12">
+			<a href="12_Dibujo_es.html">
 				<img src="img/Home/work11.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
@@ -258,23 +377,298 @@ document.oncontextmenu=new Function("return false")
 			</a>
 		</div>
 		
-		<div class="work b">
-			<a href="Habitats.html">
+		<div class="work c" id="work13">
+			<a href="13_Habitats_es.html">
 				<img src="img/Home/work12.jpg" class="grayscale" alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<p>Habitats</p>
+						<p2>Habitats</p2>
 					</div>
 				</div>
 			</a>
 		</div>
-	</div>
+		
+		<div class="work a" id="work22">
+			<a href="22_Croacia_es.html">
+				<img src="img/Home/work22.jpg" class="grayscale" alt=""/>
+				<div class="caption">
+					<div class="work_title">
+						<p>Croacia / Bosnia / Montenegro</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		
 
 	</div>
 	
 	</section><!-- end main -->
 	
+<script>
+$( "#index" ).click(function() {
+  $( "#work2" ).fadeTo( 1000, 100 )
+  $( "#work6" ).fadeTo( 1000, 100 )
+  $( "#work7" ).fadeTo( 1000, 100 )
+  $( "#work8" ).fadeTo( 1000, 100 )
+  $( "#work10" ).fadeTo( 1000, 100 )
+  $( "#work12" ).fadeTo( 1000, 100 )
+  $( "#work13" ).fadeTo( 1000, 100 )
+  $( "#work16" ).fadeTo( 1000, 100 )
+  
+  $( "#work1" ).fadeTo( 1000, 100 )
+  $( "#work3" ).fadeTo( 1000, 100 )
+  $( "#work4" ).fadeTo( 1000, 100 )
+  $( "#work5" ).fadeTo( 1000, 100 )
+  $( "#work9" ).fadeTo( 1000, 100 )
+  $( "#work11" ).fadeTo( 1000, 100 )
+  $( "#work15" ).fadeTo( 1000, 100 )
+  $( "#work14" ).fadeTo( 1000, 100 )
+  $( "#work17" ).fadeTo( 1000, 100 )
+  $( "#work18" ).fadeTo( 1000, 100 )
+  $( "#work19" ).fadeTo( 1000, 100 )
+  $( "#work20" ).fadeTo( 1000, 100 )
+  $( "#work21" ).fadeTo( 1000, 100 )
+  $( "#work22" ).fadeTo( 1000, 100 )
+  $( "#work23" ).fadeTo( 1000, 100 )
+});
+</script>
 
-	
+<script>
+$( "#foto" ).click(function() {
+  $( "#work2" ).fadeTo( 1000, 0 )
+  $( "#work6" ).fadeTo( 1000, 0 )
+  $( "#work7" ).fadeTo( 1000, 0 )
+  $( "#work8" ).fadeTo( 1000, 0 )
+  $( "#work10" ).fadeTo( 1000, 0 )
+  $( "#work12" ).fadeTo( 1000, 0 )
+  $( "#work13" ).fadeTo( 1000, 0 )
+  $( "#work14" ).fadeTo( 1000, 0 )
+  $( "#work15" ).fadeTo( 1000, 100 )
+  $( "#work16" ).fadeTo( 1000, 0 )
+  $( "#work17" ).fadeTo( 1000, 0 )
+  $( "#work18" ).fadeTo( 1000, 0 )
+  $( "#work19" ).fadeTo( 1000, 0 )
+  $( "#work20" ).fadeTo( 1000, 0 )
+  $( "#work24" ).fadeTo( 1000, 0 )
+   
+  $( "#work1" ).fadeTo( 1000, 100 )
+  $( "#work3" ).fadeTo( 1000, 100 )
+  $( "#work4" ).fadeTo( 1000, 100 )
+  $( "#work5" ).fadeTo( 1000, 100 )
+  $( "#work9" ).fadeTo( 1000, 100 )
+  $( "#work21" ).fadeTo( 1000, 100 )
+  $( "#work11" ).fadeTo( 1000, 100 )
+  $( "#work22" ).fadeTo( 1000, 100 )
+  $( "#work23" ).fadeTo( 1000, 100 )
+});
+</script>
+
+<script>
+$( "#video" ).click(function() {
+  $( "#work2" ).fadeTo( 1000, 0 )
+  $( "#work6" ).fadeTo( 1000, 0 )
+  $( "#work7" ).fadeTo( 1000, 0 )
+  $( "#work8" ).fadeTo( 1000, 100 )
+  $( "#work10" ).fadeTo( 1000, 0 )
+  $( "#work12" ).fadeTo( 1000, 100 )
+  $( "#work13" ).fadeTo( 1000, 0 )
+  $( "#work14" ).fadeTo( 1000, 0 )
+  $( "#work15" ).fadeTo( 1000, 0 )
+  $( "#work16" ).fadeTo( 1000, 0 )
+  $( "#work17" ).fadeTo( 1000, 0 )
+  $( "#work18" ).fadeTo( 1000, 0 )
+  $( "#work19" ).fadeTo( 1000, 0 )
+  $( "#work20" ).fadeTo( 1000, 0 )
+  $( "#work22" ).fadeTo( 1000, 0 )
+  $( "#work23" ).fadeTo( 1000, 0 )
+  $( "#work24" ).fadeTo( 1000, 0 )
+   
+  $( "#work1" ).fadeTo( 1000, 0 )
+  $( "#work3" ).fadeTo( 1000, 0 )
+  $( "#work4" ).fadeTo( 1000, 0 )
+  $( "#work5" ).fadeTo( 1000, 0 )
+  $( "#work9" ).fadeTo( 1000, 0 )
+  $( "#work21" ).fadeTo( 1000, 0 )
+  $( "#work11" ).fadeTo( 1000, 0 )
+});
+</script>
+
+<script>
+$( "#arquitectura" ).click(function() {
+  $( "#work2" ).fadeTo( 1000, 100 )
+  $( "#work6" ).fadeTo( 1000, 100 )
+  $( "#work7" ).fadeTo( 1000, 0 )
+  $( "#work8" ).fadeTo( 1000, 0 )
+  $( "#work10" ).fadeTo( 1000, 0 )
+  $( "#work12" ).fadeTo( 1000, 0 )
+  $( "#work14" ).fadeTo( 1000, 100 )
+  $( "#work13" ).fadeTo( 1000, 0 )
+  $( "#work15" ).fadeTo( 1000, 0 )
+  $( "#work16" ).fadeTo( 1000, 100 )
+  $( "#work17" ).fadeTo( 1000, 100 )
+  $( "#work18" ).fadeTo( 1000, 0 )
+  $( "#work19" ).fadeTo( 1000, 100 )
+  $( "#work20" ).fadeTo( 1000, 100 )
+  $( "#work21" ).fadeTo( 1000, 0 )
+  $( "#work22" ).fadeTo( 1000, 0 )
+  $( "#work23" ).fadeTo( 1000, 0 )
+  $( "#work24" ).fadeTo( 1000, 0 )
+  
+  $( "#work1" ).fadeTo( 1000, 0 )
+  $( "#work18" ).fadeTo( 1000, 0 )
+  $( "#work3" ).fadeTo( 1000, 0 )
+  $( "#work4" ).fadeTo( 1000, 0 )
+  $( "#work5" ).fadeTo( 1000, 0 )
+  $( "#work9" ).fadeTo( 1000, 0 )
+  $( "#work11" ).fadeTo( 1000, 0 )
+});
+</script>
+
+<script>
+$( "#diseño" ).click(function() {
+  $( "#work2" ).fadeTo( 1000, 0 )
+  $( "#work6" ).fadeTo( 1000, 0 )
+  $( "#work7" ).fadeTo( 1000, 100 )
+  $( "#work8" ).fadeTo( 1000, 0 )
+  $( "#work10" ).fadeTo( 1000, 100 )
+  $( "#work12" ).fadeTo( 1000, 0 )
+  $( "#work13" ).fadeTo( 1000, 100 )
+  $( "#work18" ).fadeTo( 1000, 100 )
+  $( "#work19" ).fadeTo( 1000, 0 )
+  $( "#work21" ).fadeTo( 1000, 0 )
+  $( "#work20" ).fadeTo( 1000, 0 )
+  $( "#work22" ).fadeTo( 1000, 0 )
+  $( "#work23" ).fadeTo( 1000, 0 )
+  $( "#work24" ).fadeTo( 1000, 100 )
+  
+  $( "#work1" ).fadeTo( 1000, 0 )
+  $( "#work3" ).fadeTo( 1000, 0 )
+  $( "#work4" ).fadeTo( 1000, 0 )
+  $( "#work5" ).fadeTo( 1000, 0 )
+  $( "#work9" ).fadeTo( 1000, 0 )
+  $( "#work11" ).fadeTo( 1000, 0 )
+  $( "#work14" ).fadeTo( 1000, 0 )
+  $( "#work15" ).fadeTo( 1000, 0 )  
+  $( "#work16" ).fadeTo( 1000, 0 )
+  $( "#work17" ).fadeTo( 1000, 0 )
+});
+</script>
+
+<script>
+$( "#2017" ).click(function() {
+  $( "#work1" ).fadeTo( 1000, 0 )
+  $( "#work2" ).fadeTo( 1000, 0 )
+  $( "#work3" ).fadeTo( 1000, 0 )
+  $( "#work4" ).fadeTo( 1000, 0 )
+  $( "#work5" ).fadeTo( 1000, 0 )
+  $( "#work6" ).fadeTo( 1000, 0 )
+  $( "#work7" ).fadeTo( 1000, 0 )
+  $( "#work8" ).fadeTo( 1000, 0 )
+  $( "#work9" ).fadeTo( 1000, 0 )
+  $( "#work10" ).fadeTo( 1000, 0 )
+  $( "#work11" ).fadeTo( 1000, 0 )
+  $( "#work12" ).fadeTo( 1000, 0 )
+  $( "#work13" ).fadeTo( 1000, 0 )
+  $( "#work14" ).fadeTo( 1000, 0 )
+  $( "#work15" ).fadeTo( 1000, 100 )
+  $( "#work16" ).fadeTo( 1000, 0 )
+  $( "#work17" ).fadeTo( 1000, 100 )
+  $( "#work18" ).fadeTo( 1000, 100 )
+  $( "#work19" ).fadeTo( 1000, 100 )  
+  $( "#work20" ).fadeTo( 1000, 100 )
+  $( "#work21" ).fadeTo( 1000, 100 )
+  $( "#work23" ).fadeTo( 1000, 100 )
+  $( "#work24" ).fadeTo( 1000, 100 )
+  $( "#work22" ).fadeTo( 1000, 0 )
+});
+</script>
+
+<script>
+$( "#2016" ).click(function() {
+  $( "#work1" ).fadeTo( 1000, 100 )
+  $( "#work2" ).fadeTo( 1000, 100 )
+  $( "#work3" ).fadeTo( 1000, 100 )
+  $( "#work4" ).fadeTo( 1000, 100 )
+  $( "#work5" ).fadeTo( 1000, 0 )
+  $( "#work6" ).fadeTo( 1000, 0 )
+  $( "#work7" ).fadeTo( 1000, 0 )
+  $( "#work8" ).fadeTo( 1000, 0 )
+  $( "#work9" ).fadeTo( 1000, 0 )
+  $( "#work10" ).fadeTo( 1000, 0 )
+  $( "#work11" ).fadeTo( 1000, 0 )
+  $( "#work12" ).fadeTo( 1000, 0 )
+  $( "#work13" ).fadeTo( 1000, 0 )
+  $( "#work14" ).fadeTo( 1000, 0 )
+  $( "#work15" ).fadeTo( 1000, 0 )
+  $( "#work16" ).fadeTo( 1000, 0 )
+  $( "#work17" ).fadeTo( 1000, 0 )
+  $( "#work18" ).fadeTo( 1000, 0 )
+  $( "#work19" ).fadeTo( 1000, 0 )  
+  $( "#work20" ).fadeTo( 1000, 0 )
+  $( "#work21" ).fadeTo( 1000, 0 )
+  $( "#work22" ).fadeTo( 1000, 0 )
+  $( "#work23" ).fadeTo( 1000, 0 )
+  $( "#work24" ).fadeTo( 1000, 0 )
+});
+</script>
+
+<script>
+$( "#2015" ).click(function() {
+  $( "#work1" ).fadeTo( 1000, 0 )
+  $( "#work2" ).fadeTo( 1000, 0 )
+  $( "#work3" ).fadeTo( 1000, 0 )
+  $( "#work4" ).fadeTo( 1000, 0 )
+  $( "#work5" ).fadeTo( 1000, 100 )
+  $( "#work6" ).fadeTo( 1000, 100 )
+  $( "#work7" ).fadeTo( 1000, 100 )
+  $( "#work8" ).fadeTo( 1000, 100 )
+  $( "#work9" ).fadeTo( 1000, 100 )
+  $( "#work10" ).fadeTo( 1000, 100 )
+  $( "#work11" ).fadeTo( 1000, 100 )
+  $( "#work12" ).fadeTo( 1000, 0 )
+  $( "#work13" ).fadeTo( 1000, 0 )
+  $( "#work14" ).fadeTo( 1000, 100 )
+  $( "#work15" ).fadeTo( 1000, 0 )
+  $( "#work16" ).fadeTo( 1000, 100 )
+  $( "#work17" ).fadeTo( 1000, 0 )
+  $( "#work18" ).fadeTo( 1000, 0 )
+  $( "#work19" ).fadeTo( 1000, 0 )  
+  $( "#work20" ).fadeTo( 1000, 0 )
+  $( "#work21" ).fadeTo( 1000, 0 )
+  $( "#work22" ).fadeTo( 1000, 0 )
+  $( "#work23" ).fadeTo( 1000, 0 )
+  $( "#work24" ).fadeTo( 1000, 0 )
+});
+</script>
+
+<script>
+$( "#2014" ).click(function() {
+  $( "#work1" ).fadeTo( 1000, 0 )
+  $( "#work2" ).fadeTo( 1000, 0 )
+  $( "#work3" ).fadeTo( 1000, 0 )
+  $( "#work4" ).fadeTo( 1000, 0 )
+  $( "#work5" ).fadeTo( 1000, 0 )
+  $( "#work6" ).fadeTo( 1000, 0 )
+  $( "#work7" ).fadeTo( 1000, 0 )
+  $( "#work8" ).fadeTo( 1000, 0 )
+  $( "#work9" ).fadeTo( 1000, 0 )
+  $( "#work10" ).fadeTo( 1000, 0 )
+  $( "#work11" ).fadeTo( 1000, 0 )
+  $( "#work12" ).fadeTo( 1000, 100 )
+  $( "#work13" ).fadeTo( 1000, 100 )
+  $( "#work14" ).fadeTo( 1000, 0 )
+  $( "#work15" ).fadeTo( 1000, 0 )
+  $( "#work16" ).fadeTo( 1000, 0 )
+  $( "#work17" ).fadeTo( 1000, 0 )
+  $( "#work18" ).fadeTo( 1000, 0 )
+  $( "#work19" ).fadeTo( 1000, 0 )  
+  $( "#work20" ).fadeTo( 1000, 0 )
+  $( "#work21" ).fadeTo( 1000, 0 )
+  $( "#work23" ).fadeTo( 1000, 0 )
+  $( "#work24" ).fadeTo( 1000, 0 )
+  $( "#work22" ).fadeTo( 1000, 100 )
+});
+</script>
+
 </body>
 </html>
